@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Minnodes
+Comment=Minnodes P2P Cryptocurrency
+Comment[fr]=Minnodes, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Minnodes, eşten eşe kriptografik sanal para birimi
+Exec=minnodes-qt %u
+Terminal=false
+Type=Application
+Icon=minnodes128
+MimeType=x-scheme-handler/minnodes;
+Categories=Office;Finance;

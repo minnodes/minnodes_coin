@@ -1,0 +1,26 @@
+[Unit]
+Description=Minnodes's distributed currency daemon
+After=network.target
+
+[Service]
+User=minnodes
+Group=minnodes
+
+Type=forking
+PIDFile=/var/lib/minnodesd/minnodesd.pid
+
+ExecStart=/usr/bin/minnodesd -daemon -pid=/var/lib/minnodesd/minnodesd.pid \
+          -conf=/etc/minnodes/minnodes.conf -datadir=/var/lib/minnodesd
+
+ExecStop=-/usr/bin/minnodes-cli -conf=/etc/minnodes/minnodes.conf \
+         -datadir=/var/lib/minnodesd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
