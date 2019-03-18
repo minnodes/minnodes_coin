@@ -129,7 +129,7 @@ public:
         strDevFeeAddress = "MRquTGkaS3jtqZ8Ly9ojmFwQAQebEJWUCa";
 
         /** Height or Time Based Activations **/
-        nLastPOWBlock = 60;
+        nLastPOWBlock = 130;
         nModifierUpdateBlock = 0;
         nZerocoinStartHeight = 0;
         nZerocoinStartTime = 1550476800; //  18 February 2019 08:00:00
