@@ -42,7 +42,7 @@ The following are developer notes on how to build Minnodes on your native platfo
 
 Development
 ---------------------
-The Minnodes repo's [root README](https://github.com/Minnodes-Project/Minnodes/blob/master/README.md) contains relevant information on the development process and automated testing.
+The Minnodes repo's [root README](https://github.com/minnodes/minnodes_coin/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
