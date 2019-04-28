@@ -170,6 +170,7 @@ public:
         vSeeds.push_back(CDNSSeedData("node-1.minnodes.io", "node-1.minnodes.io"));
         vSeeds.push_back(CDNSSeedData("node-2.minnodes.io", "node-2.minnodes.io"));
         vSeeds.push_back(CDNSSeedData("node-3.minnodes.io", "node-3.minnodes.io"));
+        vSeeds.push_back(CDNSSeedData("seeds.minnodes.io", "seeds.minnodes.io"));
 
         //wallet start with 'M'
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 50);
