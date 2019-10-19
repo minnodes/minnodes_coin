@@ -204,11 +204,11 @@ bool InitializeAccumulators(const int nHeight, int& nHeightCheckpoint, Accumulat
     }
 
     //Use the previous block's checkpoint to initialize the accumulator's state
-    uint256 nCheckpointPrev = chainActive[nHeight - 1]->nAccumulatorCheckpoint;
-    if (nCheckpointPrev == 0)
-        mapAccumulators.Reset();
-    else if (!mapAccumulators.Load(nCheckpointPrev))
-        return error("%s: failed to reset to previous checkpoint", __func__);
+    // uint256 nCheckpointPrev = chainActive[nHeight - 1]->nAccumulatorCheckpoint;
+    // if (nCheckpointPrev == 0)
+    //     mapAccumulators.Reset();
+    // else if (!mapAccumulators.Load(nCheckpointPrev))
+    //     return error("%s: failed to reset to previous checkpoint", __func__);
 
     nHeightCheckpoint = nHeight;
     return true;
