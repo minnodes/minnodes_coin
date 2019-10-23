@@ -307,10 +307,10 @@ bool ValidateAccumulatorCheckpoint(const CBlock& block, CBlockIndex* pindex, Acc
         if (!CalculateAccumulatorCheckpoint(pindex->nHeight, nCheckpointCalculated, mapAccumulators))
             return error("%s : failed to calculate accumulator checkpoint", __func__);
 
-        if (nCheckpointCalculated != block.nAccumulatorCheckpoint) {
-            LogPrintf("%s: block=%d calculated: %s\n block: %s\n", __func__, pindex->nHeight, nCheckpointCalculated.GetHex(), block.nAccumulatorCheckpoint.GetHex());
-            return error("%s : accumulator does not match calculated value", __func__);
-        }
+        // if (nCheckpointCalculated != block.nAccumulatorCheckpoint) {
+        //     LogPrintf("%s: block=%d calculated: %s\n block: %s\n", __func__, pindex->nHeight, nCheckpointCalculated.GetHex(), block.nAccumulatorCheckpoint.GetHex());
+        //     return error("%s : accumulator does not match calculated value", __func__);
+        // }
 
         return true;
     }
